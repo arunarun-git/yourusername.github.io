@@ -1,18 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Arun Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #00c6ff;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c5364;
+        }
+
+        .about p {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .resume {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2c5364;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #00c6ff;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background: #2c5364;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
 </head>
+
 <body>
 
-<h1>Arun</h1>
-<p>Java Developer | SQL Developer</p>
+<header>
+    <h1>Arun</h1>
+    <p> Software Engineer </p>
 
-<h2>About</h2>
-<p>I am a Java Developer with SQL knowledge.</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<h2>Resume</h2>
-<a href="Arun D Resume (1).pdf" target="_blank">View Resume</a>
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        Passionate Java Developer with strong SQL knowledge. 
+        Skilled in building scalable applications, writing efficient queries, 
+        and solving real-world problems with clean and maintainable code.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">SQL</div>
+        <div class="skill">JDBC</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Git</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Employee Management System</h3>
+            <p>Java + SQL based CRUD application to manage employee records.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Ticket Handling System</h3>
+            <p>Handled 1700+ tickets and automated workflows using SQL.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="resume" class="resume">
+    <h2>Resume</h2>
+    <p>You can view or download my resume below.</p>
+    <a href="Arun D Resume (1).pdf" target="_blank" class="btn">View Resume</a>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: arun@example.com</p>
+    <p>Phone: +91 12345 67890</p>
+    <p>Location: Chennai, India</p>
+</section>
+
+<footer>
+    <p>© 2026 Arun. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
