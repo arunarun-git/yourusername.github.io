@@ -27,14 +27,21 @@
             text-align: center;
         }
 
-        /* 🔥 Profile Image Style */
+        /* 🔥 FLEX HEADER */
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
         .profile-pic {
-            width: 130px;
-            height: 130px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid white;
-            margin-bottom: 15px;
         }
 
         header h1 {
@@ -42,8 +49,7 @@
         }
 
         header p {
-            font-size: 20px;
-            margin-top: 10px;
+            font-size: 18px;
             color: #ccc;
         }
 
@@ -149,11 +155,15 @@
 
 <header>
 
-    <!-- 🔥 ADD YOUR IMAGE HERE -->
-    <img src="ARUN D.JPG" alt="Arun Profile" class="profile-pic">
+    <!-- 🔥 IMAGE + NAME SIDE BY SIDE -->
+    <div class="header-flex">
+        <img src="ARUN D.jpg" alt="Arun Profile" class="profile-pic">
 
-    <h1>Arun D</h1>
-    <p>Software Engineer</p>
+        <div>
+            <h1>Arun D</h1>
+            <p>Software Engineer</p>
+        </div>
+    </div>
 
     <nav>
         <a href="#about">About</a>
